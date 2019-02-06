@@ -1,0 +1,261 @@
+header{
+	background-color:#3facff;
+	border-bottom:1px solid #c7c7c7;
+	position:relative;
+	z-index: 3;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+#mobilemenu-icon{
+	position:relative;
+	z-index: 3;
+	text-align: right;
+	margin-top:5px;
+	img{
+		width: 50px;
+		height: 50px;
+	}
+}
+.spray-logo{
+	text-align: center;
+	img{
+		width: 100%;
+		display: block;
+	}
+}
+#nav-bar{
+	
+}
+
+#menulistings{
+	//margin-top:-100px;
+	opacity:0;
+	margin-top:0;
+	right:0;
+	padding:0 10px 0;
+	position: absolute;
+	z-index:2;
+	background-color:#96d1ff;
+	-webkit-transition: opacity 2s ease 0s;
+	transition: opacity 1s ease 0s, right 1s ease 0s;
+	width:100%;
+	left: 0;
+	top:0;
+	ul{
+		padding:0;
+		margin:0;
+	}
+	li.navlink{
+		a{
+			text-decoration: none;
+			font-size: 20px;
+			color:#ffffff;
+		}
+		list-style: none;
+		margin:10px 0;
+		text-align: center;
+	}
+}
+
+.closemeubutton{
+	button{
+		color:#fff;
+		font-size:30px;
+		border:none;
+		background-color:transparent;
+	}
+	
+}
+#emailcapture{
+	background-color:#3facff;
+	min-height: 100px;
+	padding:30px;
+	//transform: rotate(-8deg);
+	position:relative;
+	z-index: 1;
+	transform: skewY(-10deg);
+	transform-origin:top left;
+	
+}
+.emailcapturecontent{
+		margin:0;
+		padding:50px 0;
+		text-align: center;
+		transform:skewY(10deg);
+		h1{
+			color:#fff;
+			margin:0 0 10px 0;
+		}
+}
+
+.inputemail{
+	input{
+		border:1px solid #bcbcbc;
+		padding:12px 8px 8px 8px;
+		width: 70%;
+		margin: 0;
+		border-top-left-radius:5px;
+		border-bottom-left-radius:5px;
+	}
+	#submit{
+		width:30%;
+		margin: 0 0 0 -5px;
+		border:1px solid #bcbcbc;
+		border-left:none;
+		//border-radius:8px;
+		border-top-right-radius:5px;
+		border-bottom-right-radius:5px;
+		background-color:#ff982b;
+		padding:5px 0 5px 0;
+		color:#fff;
+		font-size:18px;
+		font-weight: 600;
+		//height: 28px;
+	}
+}
+.packagestitle{
+	text-align: center;
+	text-transform: uppercase;
+	font-size:30px;
+}
+
+.package-box{
+	border:2px solid #3facff;
+	border-bottom:none;
+	border-radius:5px;
+	margin: 10px 0;
+	button{
+		background-color:#3facff;
+		border:1px solid #3facff;
+		width: 100%;
+		margin:0;
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+		font-size:1.5em;
+		padding:8px 0;
+		font-weight:600;
+		text-transform: uppercase;
+		color:#ffffff;
+	}
+}
+.package-title{
+	text-align: center;
+	font-size: 20px;
+	padding:10px 0;
+	border-bottom:2px solid #3facff;
+	span{
+		color:red;
+		font-weight:600;
+	}
+}
+
+.package-inc{
+	padding:0;
+	margin-bottom:20px;
+	li{
+		list-style: none;
+		text-align: center;
+		padding:5px 0;
+		border-bottom:1px solid #e5e5e5;
+	}
+}
+
+#embedvideo{
+	background-color:#3facff;
+	padding:15px 0;
+	text-align: center;
+	#video{
+		object-position: 50% 50%;
+	}
+}
+
+#bookingmethod{
+	background-color:#edeeef; 
+}
+
+footer{
+	margin-top: 20px;
+	#footercopyright{
+		text-align: center;
+	}
+	ul{
+		text-align: center;
+		padding:0;
+		li{
+			display:inline-block;
+			padding-right: 10px;
+			a{
+				color:#000;
+				font-size:1.5em;
+				margin:0 0 100px 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+  #emailcapture{
+  	padding:200px 0 100px 0;
+  }
+ #bookingmethod{
+ 	padding:30px 0;
+ }
+ .spray-logo{
+ 	img{
+ 		width: 150px;
+ 		height: 70px;
+ 	}
+ }
+ #mobilemenu-icon{
+ 	display: none;
+ }
+ .closemeubutton{
+	display: none;
+  }
+ #menulistings{
+ 	opacity:1;
+ 	position:relative;
+ 	background-color:transparent;
+ 	padding-top:20px;
+ 	ul{
+ 		text-align: right;
+ 		li.navlink{
+ 			margin-right:10px;
+ 			display: inline-block;
+ 		}
+ 	}	
+ }
+ .emailcapturecontent{
+ 	h1{
+ 		font-size: 3em;
+ 	}
+ }
+ .inputemail{
+ 	input{
+ 		width:30%;
+ 	}
+ 	#submit{
+ 		width: 10%;
+ 	}
+ }
+ #spraypackages{
+ 	padding:30px 0 50px 0;
+ }
+ #embedvideo{
+ 	padding:60px 0;
+ 	#video{
+ 		width: 100%;
+ 		height: 400px;
+ 	}
+ }
+ header{
+ 	width: 100%;
+ 	position:fixed;
+ 	top: 0;
+ }
+}
+
